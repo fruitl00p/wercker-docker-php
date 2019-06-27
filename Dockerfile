@@ -8,10 +8,11 @@ RUN apt-get update && \
         libmcrypt-dev \
         libbz2-dev \
         zlib1g-dev \
+        unzip \
         curl \
         git \
         && \
-    docker-php-ext-install mcrypt zip bz2 mbstring && \
+    docker-php-ext-install zip bz2 mbstring && \
     docker-php-ext-enable opcache && \
     echo "opcache.enable_cli = On" > /usr/local/etc/php/conf.d/opcache-cli.ini && \
     echo "date.timezone = $TZ" > /usr/local/etc/php/conf.d/timezone.ini && \
