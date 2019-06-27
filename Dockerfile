@@ -1,4 +1,4 @@
-FROM php:7.3-cli
+FROM php:7-cli
 MAINTAINER Kingsquare <docker@kingsquare.nl>
 
 ENV TZ "Europe/Amsterdam"
