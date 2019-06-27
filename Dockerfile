@@ -1,4 +1,4 @@
-FROM php:7-cli
+FROM php:7.1-cli
 MAINTAINER Kingsquare <docker@kingsquare.nl>
 
 ENV TZ "Europe/Amsterdam"
@@ -8,6 +8,7 @@ RUN apt-get update && \
         libmcrypt-dev \
         libbz2-dev \
         zlib1g-dev \
+        libzip-dev \
         unzip \
         curl \
         git \
